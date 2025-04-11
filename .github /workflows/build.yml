@@ -1,0 +1,6 @@
+- name: Upload app to Appetize.io
+  run: |
+    curl -H "Authorization: Bearer ${{ secrets.'tok_o3laoux75kpoudqemidnbxfvpq'; }}" \
+         -F "file=@your-app.apk" \
+         -F "platform=android" \
+         https://api.appetize.io/v1/apps
